@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title></title>
+    <link href="/2024/10/28/CTF%E5%85%A5%E9%97%A8%E5%9F%BA%E7%A1%80/"/>
+    <url>/2024/10/28/CTF%E5%85%A5%E9%97%A8%E5%9F%BA%E7%A1%80/</url>
+    
+    <content type="html"><![CDATA[<h1 id="CTF入门基础"><a href="#CTF入门基础" class="headerlink" title="CTF入门基础"></a>CTF入门基础</h1><p>##CTF赛事介绍</p><p>CTF（Capture The Flag）是一种流行的信息安全竞赛形式，其英文名可直译为“夺得Flag”，也可意译为“夺旗赛”。其大致流程是，参赛团队之间通过进行攻防对抗、程序分析等形式，率先从主办方给出的比赛环境中得到一串具有一定格式的字符串或其他内容，并将其提交给主办方，从而夺得分数。为了方便称呼，我们把这样的内容称之为“Flag”。</p><h2 id="CTF竞赛赛制"><a href="#CTF竞赛赛制" class="headerlink" title="CTF竞赛赛制"></a>CTF竞赛赛制</h2><h3 id="解题模式（Jeopardy）"><a href="#解题模式（Jeopardy）" class="headerlink" title="解题模式（Jeopardy）"></a>解题模式（Jeopardy）</h3><ul><li><p>寻找题目背后隐藏的Flag    形式：flag{       }</p></li><li><p>提交Flag给主办方，即得分</p><h4 id="五个方向"><a href="#五个方向" class="headerlink" title="五个方向"></a>五个方向</h4><ul><li>Web  常见的Web漏洞，如SQL注入、XSS、文件包含、代码审计、文件上传等漏洞</li><li>Peverse(逆向)  软件逆向、破解技术等，要求有较强的反汇编、反编译扎实功底</li><li>Pwn   理解目标工作原理 + 漏洞挖掘 + 漏洞利用</li><li>Crypto(密码学)  古典密码学，现代密码学</li><li>Misc(杂项)  破解压缩包，流量分析，隐写</li><li>​</li></ul></li></ul><h3 id="攻防模式（Attack-Defense）"><a href="#攻防模式（Attack-Defense）" class="headerlink" title="攻防模式（Attack-Defense）"></a>攻防模式（Attack-Defense）</h3><ul><li><p>每支队伍运维3-4个存在漏洞的网络服务</p></li><li><p>多支队伍互相攻防，分为若干回合</p></li><li><p>每一回合中，攻入对方之际，拿到Flag，得分</p><p>考察快速漏洞修复能力，快速批量攻击能力</p></li></ul><p>###混合模式（Mix）</p><p>结合了解题模式与攻防模式</p><p>##CTF国内赛事</p><ul><li><p>XCTF全国联赛：由中国网络空间安全协会竞评演练工作组主办，南京赛宁承办，是国内最权威、最高技术水平与最大影响力的网络安全CTF赛事平台。</p></li><li><p>AliCTF：由阿里巴巴公司组织，面向在校学生的CTF竞赛，冠军奖金为10万元以及BlackHat全程费用。</p></li><li><p>XDCTF：由西安电子科技大学信息安全协会组织，偏向于渗透实战经验。</p></li><li><p>HCTF：由杭州电子科技大学信息安全协会承办组织，曾出征DEFCON、BCTF等大型比赛并取得优异成绩。</p></li><li><p>ISCC：由北理工组织，逐渐转向CTF赛制。</p></li><li><p>2024年全国高校网络安全管理运维赛：由教育部教育管理信息中心指导，中国教育技术协会主办，北京大学、上海交通大学承办。比赛分为网络安全理论赛和实践能力赛两部分。</p></li><li><p>NewStarCTF 2024：由多所高校联合发起的新生入门赛事，比赛持续五周时间，采用网络安全靶场赛的形式（传统Jeopardy解题模式）。</p><h2 id="网站推荐"><a href="#网站推荐" class="headerlink" title="网站推荐"></a>网站推荐</h2><p>推荐的CTF学习网站和资源：</p><p>CTFHub</p><p>BUUCTF<br>攻防世界<br>Bugku<br>CTF Wiki<br>CTF Time<br>52pojie.cn<br>Freebuf.com</p></li></ul>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2024/10/27/hello-world/"/>
     <url>/2024/10/27/hello-world/</url>
