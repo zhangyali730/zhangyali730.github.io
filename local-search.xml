@@ -5,6 +5,19 @@
   
   <entry>
     <title></title>
+    <link href="/2024/11/02/%E7%BB%83%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+    <url>/2024/11/02/%E7%BB%83%E4%B9%A0%E6%80%BB%E7%BB%93/</url>
+    
+    <content type="html"><![CDATA[<h1 id="练习总结"><a href="#练习总结" class="headerlink" title="练习总结"></a>练习总结</h1><h2 id="DNS"><a href="#DNS" class="headerlink" title="DNS"></a>DNS</h2><p>打开文件，搜索DNS，有三条流量查询，复制，16进制转ASCII码，再转base64，得到flag</p><h2 id="Labyrinth"><a href="#Labyrinth" class="headerlink" title="Labyrinth"></a>Labyrinth</h2><p>文件拉到stegsolve中，red plane 0中有二维码，扫码，出flag</p><h2 id="PNG的基本食用"><a href="#PNG的基本食用" class="headerlink" title="PNG的基本食用"></a>PNG的基本食用</h2><h3 id="第一张"><a href="#第一张" class="headerlink" title="第一张"></a>第一张</h3><p>在010editor中更改图片的高即可得到第一部分flag</p><h3 id="第二张"><a href="#第二张" class="headerlink" title="第二张"></a>第二张</h3><p>使用StegSolve打开，使用Analyse-&gt;DataExtract模块进行数据提取，抽取出图片中的隐藏数据，得到第二部分flag</p><h3 id="第三张"><a href="#第三张" class="headerlink" title="第三张"></a>第三张</h3><p>第三张图片转换成16进制，这里可以直接使用010editor打开，在文件的末尾找到第三部分flag</p><h2 id="大白"><a href="#大白" class="headerlink" title="大白"></a>大白</h2><p>010中直接修改图片的高</p><h2 id="字里行间的秘密"><a href="#字里行间的秘密" class="headerlink" title="字里行间的秘密"></a>字里行间的秘密</h2><p>零宽加密，全选到在线网站解密，得到key,打开文档修改字体颜色，得到flag</p><p>重点：发现是隐写，字体颜色修改</p><h2 id="编码转换"><a href="#编码转换" class="headerlink" title="编码转换"></a>编码转换</h2><p>biainfuck加密、JavaScript中的数组和字符串操作加密和ook加密</p><p>使用在线网站解密，拼接即可</p><h2 id="隐写"><a href="#隐写" class="headerlink" title="隐写"></a>隐写</h2><p>使用StegSlove中Analyse-&gt;Data<br>Extract模块进行数据提取，抽取出图片中的隐藏数据，选择LSB&gt;save bin&gt;文件名.png,得到一个二维码，扫码得到flag</p><h2 id="zip伪加密"><a href="#zip伪加密" class="headerlink" title="zip伪加密"></a>zip伪加密</h2><p>打开010，将09 00修改为00 00，在txt文件中查看flag</p><h2 id="你真的只能看到404吗？"><a href="#你真的只能看到404吗？" class="headerlink" title="你真的只能看到404吗？"></a>你真的只能看到404吗？</h2><p>打开010，查看右侧框，即可发现隐藏flag</p><h1 id="重点"><a href="#重点" class="headerlink" title="重点"></a>重点</h1><ul><li>可以大致分辨判断密码类型，并会使用在线网站解密</li><li>可以判断题目类型并使用相关软件，如010，stegsolve，vscode</li><li>学会使用AI帮助解疑，或者检索关键字解决问题</li></ul>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
     <link href="/2024/10/28/CTF%E5%85%A5%E9%97%A8%E5%9F%BA%E7%A1%80/"/>
     <url>/2024/10/28/CTF%E5%85%A5%E9%97%A8%E5%9F%BA%E7%A1%80/</url>
     

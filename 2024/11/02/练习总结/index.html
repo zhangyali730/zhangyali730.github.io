@@ -19,15 +19,15 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="CTF入门基础##CTF赛事介绍 CTF（Capture The Flag）是一种流行的信息安全竞赛形式，其英文名可直译为“夺得Flag”，也可意译为“夺旗赛”。其大致流程是，参赛团队之间通过进行攻防对抗、程序分析等形式，率先从主办方给出的比赛环境中得到一串具有一定格式的字符串或其他内容，并将其提交给主办方，从而夺得分数。为了方便称呼，我们把这样的内容称之为“Flag”。 CTF竞赛赛制解题模式（">
+    <meta name="description" content="练习总结DNS打开文件，搜索DNS，有三条流量查询，复制，16进制转ASCII码，再转base64，得到flag Labyrinth文件拉到stegsolve中，red plane 0中有二维码，扫码，出flag PNG的基本食用第一张在010editor中更改图片的高即可得到第一部分flag 第二张使用StegSolve打开，使用Analyse-&gt;DataExtract模块进行数据提取，抽">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2024/10/28/CTF%E5%85%A5%E9%97%A8%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:url" content="http://example.com/2024/11/02/%E7%BB%83%E4%B9%A0%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="CTF入门基础##CTF赛事介绍 CTF（Capture The Flag）是一种流行的信息安全竞赛形式，其英文名可直译为“夺得Flag”，也可意译为“夺旗赛”。其大致流程是，参赛团队之间通过进行攻防对抗、程序分析等形式，率先从主办方给出的比赛环境中得到一串具有一定格式的字符串或其他内容，并将其提交给主办方，从而夺得分数。为了方便称呼，我们把这样的内容称之为“Flag”。 CTF竞赛赛制解题模式（">
+<meta property="og:description" content="练习总结DNS打开文件，搜索DNS，有三条流量查询，复制，16进制转ASCII码，再转base64，得到flag Labyrinth文件拉到stegsolve中，red plane 0中有二维码，扫码，出flag PNG的基本食用第一张在010editor中更改图片的高即可得到第一部分flag 第二张使用StegSolve打开，使用Analyse-&gt;DataExtract模块进行数据提取，抽">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-10-28T05:02:51.355Z">
-<meta property="article:modified_time" content="2024-10-28T04:58:12.176Z">
+<meta property="article:published_time" content="2024-11-02T14:47:14.154Z">
+<meta property="article:modified_time" content="2024-11-03T15:18:05.989Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -210,8 +210,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-10-28 13:02" pubdate>
-          2024年10月28日 下午
+        <time datetime="2024-11-02 22:47" pubdate>
+          2024年11月2日 晚上
         </time>
       </span>
     
@@ -222,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          674 字
+          392 字
         
       </span>
     
@@ -233,7 +233,7 @@
         
         
         
-          6 分钟
+          4 分钟
         
       </span>
     
@@ -275,52 +275,23 @@
             
               <div class="markdown-body">
                 
-                <h1 id="CTF入门基础"><a href="#CTF入门基础" class="headerlink" title="CTF入门基础"></a>CTF入门基础</h1><p>##CTF赛事介绍</p>
-<p>CTF（Capture The Flag）是一种流行的信息安全竞赛形式，其英文名可直译为“夺得Flag”，也可意译为“夺旗赛”。其大致流程是，参赛团队之间通过进行攻防对抗、程序分析等形式，率先从主办方给出的比赛环境中得到一串具有一定格式的字符串或其他内容，并将其提交给主办方，从而夺得分数。为了方便称呼，我们把这样的内容称之为“Flag”。</p>
-<h2 id="CTF竞赛赛制"><a href="#CTF竞赛赛制" class="headerlink" title="CTF竞赛赛制"></a>CTF竞赛赛制</h2><h3 id="解题模式（Jeopardy）"><a href="#解题模式（Jeopardy）" class="headerlink" title="解题模式（Jeopardy）"></a>解题模式（Jeopardy）</h3><ul>
-<li><p>寻找题目背后隐藏的Flag    形式：flag{       }</p>
-</li>
-<li><p>提交Flag给主办方，即得分</p>
-<h4 id="五个方向"><a href="#五个方向" class="headerlink" title="五个方向"></a>五个方向</h4><ul>
-<li>Web  常见的Web漏洞，如SQL注入、XSS、文件包含、代码审计、文件上传等漏洞</li>
-<li>Peverse(逆向)  软件逆向、破解技术等，要求有较强的反汇编、反编译扎实功底</li>
-<li>Pwn   理解目标工作原理 + 漏洞挖掘 + 漏洞利用</li>
-<li>Crypto(密码学)  古典密码学，现代密码学</li>
-<li>Misc(杂项)  破解压缩包，流量分析，隐写</li>
-<li>​</li>
-</ul>
-</li>
-</ul>
-<h3 id="攻防模式（Attack-Defense）"><a href="#攻防模式（Attack-Defense）" class="headerlink" title="攻防模式（Attack-Defense）"></a>攻防模式（Attack-Defense）</h3><ul>
-<li><p>每支队伍运维3-4个存在漏洞的网络服务</p>
-</li>
-<li><p>多支队伍互相攻防，分为若干回合</p>
-</li>
-<li><p>每一回合中，攻入对方之际，拿到Flag，得分</p>
-<p>考察快速漏洞修复能力，快速批量攻击能力</p>
-</li>
-</ul>
-<p>###混合模式（Mix）</p>
-<p>结合了解题模式与攻防模式</p>
-<p>##CTF国内赛事</p>
-<ul>
-<li><p>XCTF全国联赛：由中国网络空间安全协会竞评演练工作组主办，南京赛宁承办，是国内最权威、最高技术水平与最大影响力的网络安全CTF赛事平台。</p>
-</li>
-<li><p>AliCTF：由阿里巴巴公司组织，面向在校学生的CTF竞赛，冠军奖金为10万元以及BlackHat全程费用。</p>
-</li>
-<li><p>XDCTF：由西安电子科技大学信息安全协会组织，偏向于渗透实战经验。</p>
-</li>
-<li><p>HCTF：由杭州电子科技大学信息安全协会承办组织，曾出征DEFCON、BCTF等大型比赛并取得优异成绩。</p>
-</li>
-<li><p>ISCC：由北理工组织，逐渐转向CTF赛制。</p>
-</li>
-<li><p>2024年全国高校网络安全管理运维赛：由教育部教育管理信息中心指导，中国教育技术协会主办，北京大学、上海交通大学承办。比赛分为网络安全理论赛和实践能力赛两部分。</p>
-</li>
-<li><p>NewStarCTF 2024：由多所高校联合发起的新生入门赛事，比赛持续五周时间，采用网络安全靶场赛的形式（传统Jeopardy解题模式）。</p>
-<h2 id="网站推荐"><a href="#网站推荐" class="headerlink" title="网站推荐"></a>网站推荐</h2><p>推荐的CTF学习网站和资源：</p>
-<p>CTFHub</p>
-<p>BUUCTF<br>攻防世界<br>Bugku<br>CTF Wiki<br>CTF Time<br>52pojie.cn<br>Freebuf.com</p>
-</li>
+                <h1 id="练习总结"><a href="#练习总结" class="headerlink" title="练习总结"></a>练习总结</h1><h2 id="DNS"><a href="#DNS" class="headerlink" title="DNS"></a>DNS</h2><p>打开文件，搜索DNS，有三条流量查询，复制，16进制转ASCII码，再转base64，得到flag</p>
+<h2 id="Labyrinth"><a href="#Labyrinth" class="headerlink" title="Labyrinth"></a>Labyrinth</h2><p>文件拉到stegsolve中，red plane 0中有二维码，扫码，出flag</p>
+<h2 id="PNG的基本食用"><a href="#PNG的基本食用" class="headerlink" title="PNG的基本食用"></a>PNG的基本食用</h2><h3 id="第一张"><a href="#第一张" class="headerlink" title="第一张"></a>第一张</h3><p>在010editor中更改图片的高即可得到第一部分flag</p>
+<h3 id="第二张"><a href="#第二张" class="headerlink" title="第二张"></a>第二张</h3><p>使用StegSolve打开，使用Analyse-&gt;DataExtract模块进行数据提取，抽取出图片中的隐藏数据，得到第二部分flag</p>
+<h3 id="第三张"><a href="#第三张" class="headerlink" title="第三张"></a>第三张</h3><p>第三张图片转换成16进制，这里可以直接使用010editor打开，在文件的末尾找到第三部分flag</p>
+<h2 id="大白"><a href="#大白" class="headerlink" title="大白"></a>大白</h2><p>010中直接修改图片的高</p>
+<h2 id="字里行间的秘密"><a href="#字里行间的秘密" class="headerlink" title="字里行间的秘密"></a>字里行间的秘密</h2><p>零宽加密，全选到在线网站解密，得到key,打开文档修改字体颜色，得到flag</p>
+<p>重点：发现是隐写，字体颜色修改</p>
+<h2 id="编码转换"><a href="#编码转换" class="headerlink" title="编码转换"></a>编码转换</h2><p>biainfuck加密、JavaScript中的数组和字符串操作加密和ook加密</p>
+<p>使用在线网站解密，拼接即可</p>
+<h2 id="隐写"><a href="#隐写" class="headerlink" title="隐写"></a>隐写</h2><p>使用StegSlove中Analyse-&gt;Data<br>Extract模块进行数据提取，抽取出图片中的隐藏数据，选择LSB&gt;save bin&gt;文件名.png,得到一个二维码，扫码得到flag</p>
+<h2 id="zip伪加密"><a href="#zip伪加密" class="headerlink" title="zip伪加密"></a>zip伪加密</h2><p>打开010，将09 00修改为00 00，在txt文件中查看flag</p>
+<h2 id="你真的只能看到404吗？"><a href="#你真的只能看到404吗？" class="headerlink" title="你真的只能看到404吗？"></a>你真的只能看到404吗？</h2><p>打开010，查看右侧框，即可发现隐藏flag</p>
+<h1 id="重点"><a href="#重点" class="headerlink" title="重点"></a>重点</h1><ul>
+<li>可以大致分辨判断密码类型，并会使用在线网站解密</li>
+<li>可以判断题目类型并使用相关软件，如010，stegsolve，vscode</li>
+<li>学会使用AI帮助解疑，或者检索关键字解决问题</li>
 </ul>
 
                 
@@ -340,7 +311,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div></div>
-      <div>http://example.com/2024/10/28/CTF入门基础/</div>
+      <div>http://example.com/2024/11/02/练习总结/</div>
     </div>
     <div class="license-meta">
       
@@ -352,7 +323,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年10月28日</div>
+          <div>2024年11月2日</div>
         </div>
       
       
@@ -384,18 +355,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/11/02/%E7%BB%83%E4%B9%A0%E6%80%BB%E7%BB%93/" title="">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile"></span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/10/27/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2024/10/28/CTF%E5%85%A5%E9%97%A8%E5%9F%BA%E7%A1%80/" title="">
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
